@@ -1,3 +1,6 @@
 #!/bin/bash
 sudo service codedeploy-agent start
+sudo yum insatll python
+sudo yum install pip
+pip install flask
 yum install -y httpd
