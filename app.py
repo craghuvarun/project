@@ -1,6 +1,9 @@
 from markupsafe import escape
 from flask import Flask, abort
 
+if __name__ == '__main__':
+  app.run(host='0.0.0.0', port=80)
+
 app = Flask(__name__)
 
 
@@ -29,3 +32,5 @@ def greet_user(user_id):
         return '<h2>Hi {}</h2>'.format(users[user_id])
     except IndexError:
         abort(404)
+        
+        
