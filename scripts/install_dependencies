@@ -1,4 +1,12 @@
 #!/bin/bash
+sudo apt-get update
+sudo apt-get install ruby2.0
+sudo apt-get install wget
+cd /home/ubuntu
+wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+sudo service codedeploy-agent status
 sudo service codedeploy-agent start
 sudo yum insatll python
 sudo yum install pip
